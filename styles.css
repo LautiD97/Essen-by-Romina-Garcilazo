@@ -1,0 +1,468 @@
+*{box-sizing:border-box;font-family:Arial}
+body{margin:0;background:#f4f6f9}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  background:#fff;
+}
+
+.logo{height:40px}
+
+nav a{
+  margin:10px;
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+}
+
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:linear-gradient(120deg,#e3f2fd,#ffffff);
+}
+
+.carousel{
+  overflow:hidden;
+  width:100%;
+}
+
+.carousel-track{
+  display:flex;
+  animation: mover 15s infinite linear;
+}
+
+.carousel img{
+  width:300px;
+  margin:5px;
+  border-radius:10px;
+}
+
+@keyframes mover{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-100%)}
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.sobre, .contacto{
+  padding:40px;
+  max-width:800px;
+  margin:auto;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+}
+
+input, textarea{
+  margin:10px 0;
+  padding:10px;
+}
+
+button{
+  padding:12px;
+  background:#1976d2;
+  color:white;
+  border:none;
+  border-radius:8px;
+}
+
+.redes a{
+  margin:15px;
+  display:inline-block;
+  text-decoration:none;
+  color:#1976d2;
+  font-weight:bold;
+  text-align: center;
+
+}
+
+.btn-whatsapp {
+  display: block;          /* Hace que se comporte como bloque para centrar */
+  margin: 20px auto;       /* Centra horizontalmente y agrega margen arriba/abajo */
+  background-color: #25D366; /* Verde típico de WhatsApp */
+  color: white;            /* Texto blanco */
+  padding: 12px 25px;      /* Tamaño del botón */
+  text-align: center;      
+  text-decoration: none;   
+  border-radius: 8px;      /* Bordes redondeados */
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57; /* Verde más oscuro al pasar el mouse */
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #3a3a3a, #111);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* RECETAS */
+.recetas {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  padding-bottom: 15px;
+}
+
+/* CUIDADOS */
+.cuidados {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-cuidados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bloque {
+  background: #f1f1f1;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.bloque:hover {
+  transform: scale(1.05);
+}
+
+/* GALERÍA */
+.galeria-cuidados {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria-cuidados img {
+  width: 240px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.galeria-cuidados img:hover {
+  transform: scale(1.08);
+}
+
+.card {
+  padding: 12px;
+  min-height: 200px;
+}
+
+.card img {
+  height: 480px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.20);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo  {
+  height: 90px;   /* Ajustá el tamaño si lo querés más grande o chico */
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #b30000; /* Podés usar el color principal de tu web */
+}
+
+/* ====== PRODUCTOS - CARDS UNIFICADAS ====== */
+
+.seccion-productos {
+  padding: 60px 5%;
+  background: #f3f3f3;
+}
+
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Box del producto */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 360px;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.2);
+}
+
+/* Imagen MÁS chica y prolija */
+.card img {
+  width: 100%;
+  height: 370px;   /* <<< ACÁ se achican las imágenes */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 6px 0;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+/* ===== INICIO - TEXTO INTRO ===== */
+.intro {
+  max-width: 900px;
+  margin: 60px auto 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ===== BENEFICIOS ===== */
+.beneficios {
+  padding: 60px 5%;
+  background: #f3f3f3;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.beneficios .contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.beneficios .card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficios .card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.2);
+}
+
+.beneficios .card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.beneficios .card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* ===== CIERRE ===== */
+.cierre {
+  background: linear-gradient(135deg, #111, #333);
+  padding: 70px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.cierre p {
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ===== VENTAJAS SIN BOX - PRODUCTOS ===== */
+
+.ventajas-productos {
+  padding: 60px 10%;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+.ventajas-productos h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.lista-ventajas p {
+  font-size: 18px;
+  color: #333;
+  margin: 12px 0;
+  transition: transform 0.3s ease;
+}
+
+.lista-ventajas p:hover {
+  transform: translateX(8px);
+}
+
+/* ===== SOBRE MÍ ===== */
+
+.sobre-mi {
+  padding: 80px 10%;
+  background: #f3f3f3;
+}
+
+.sobre-contenedor {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.sobre-texto h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #111;
+}
+
+.sobre-texto p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.sobre-texto blockquote {
+  margin-top: 30px;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  color: #555;
+}
